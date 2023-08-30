@@ -1,0 +1,78 @@
+:root{
+    --cor-padrao-fundo:#e5e2e2;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    display:grid;
+    grid-template-areas: "menu menu"
+    "sidebar conteudo";
+}
+#menu{
+    background-color: var(--cor-padrao-fundo);
+    grid-area: menu;
+    width: 100vw;
+    height: 10vh;
+    color: rgb(0, 0, 0);
+}
+#sidebar{
+    background-color: #bbbbbb;
+    grid-area: sidebar;
+    height: 90vh;
+    width: 10vw;
+    font-size: 1.6rem;
+}
+#conteudo{
+    background-color: whitesmoke;
+    grid-area: conteudo;
+    height: 90vh;
+    width: 90vw;
+    text-align: center;
+}
+.nav{
+    display: flex;
+    /* border: 1px solid #ffff; */
+    text-decoration: none;
+    gap: 15%;
+}
+
+.nav li{
+    padding-top: 0.7rem;
+    font-size:1.3rem ;
+    text-align: center;
+    border-radius: 10%;
+    list-style: none;
+    height: 6vh;
+    cursor: pointer;
+    width: 6vw;
+    color: black;
+}
+.nav a{
+    text-decoration: none;
+    color:rgb(7, 7, 7) ;
+}
+.nav li:hover{
+    transition: 0.5s;
+   background-color: rgb(156, 156, 156); 
+   color: black;
+}
+.nav-lateral a{
+    text-decoration: none;
+    color: black;
+}
+.nav-lateral{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 50%;
+    width: 8vw;
+    height: 16vh;
+
+}
+.nav-lateral  li:hover{
+    transition: 0.5s;
+    background-color: black;
+    color: var(--cor-padrao-fundo);
+}
